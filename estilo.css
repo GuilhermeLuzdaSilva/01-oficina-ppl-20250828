@@ -40,21 +40,38 @@ header {
     font-weight: bold;
 }
 
-.titulo {
-    border: .1rem solid greenyellow;
+.titulo_cabecalho {
+    /* border: .1rem solid greenyellow; */
     flex: 1;
 }
 
 .menu-hamburguer {
-    border: .1rem solid red;
+    /* border: .1rem solid red; */
     border-radius: 100%;
     width: 1.2rem;
     height: 1.2rem;
-    padding: .5rem;
+    padding: .7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+.menu-hamburger:hover{
+    background-color:rgb(0, 0, 0);
+
+}
+.menu-hamburguer:hover i{
+    color:crimson;
+}
+
+
+.menu-hamburguer i:hover{
+    color:blue;
+}
+
+.menu-hamburguer i {
+    color:rgb(255, 255, 255);
+    font-size:1.5rem;
 }
 
 section {
@@ -73,6 +90,8 @@ main {
     /* border: .1rem solid purple; */
     flex: 1;
     padding: .7rem;
+    display: flex;
+   flex-wrap: wrap;
 }
 
 .cartao {
@@ -81,6 +100,8 @@ main {
     height: 18rem;
     box-shadow: .5rem .5rem .2rem .03rem #eee;
     padding: .5rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .imagem {
@@ -121,4 +142,14 @@ footer {
     color: #eee;
     height: 3rem;
     padding: .7rem;
+}
+
+@media(max-widith: 576px){
+.titulo_cabecalho{
+    opacity:0;
+}
+nav {
+    display: none;
+}
+
 }
